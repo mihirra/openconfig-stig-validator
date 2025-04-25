@@ -1,0 +1,736 @@
+{
+  "routing-policy": {
+    "defined-sets": {
+      "prefix-sets": {
+        "prefix-set": [
+          {
+            "config": {
+              "name" : "BOGON_IPV4",
+              "mode": "IPV4"
+            },
+            "name": "BOGON_IPV4",
+            "prefixes": {
+              "prefix": [
+                {
+                  "config": {
+                    "ip-prefix": "0.0.0.0/8",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "0.0.0.0/8",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "10.0.0.0/8",
+                    "masklength-range": "8..12"
+                  },
+                  "ip-prefix": "10.0.0.0/8",
+                  "masklength-range": "8..12"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "100.64.0.0/12",
+                    "masklength-range": "10..14"
+                  },
+                  "ip-prefix": "100.64.0.0/12",
+                  "masklength-range": "10..14"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "127.0.0.0/8",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "127.0.0.0/8",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "169.254.0.0/16",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "169.254.0.0/16",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "172.16.0.0/12",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "172.16.0.0/12",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "192.0.2.0/24",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "192.0.2.0/24",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "192.88.99.0/24",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "192.88.99.0/24",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "192.168.0.0/16",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "192.168.0.0/16",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "198.18.0.0/15",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "198.18.0.0/15",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "198.51.100.0/24",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "198.51.100.0/24",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "203.0.113.0/24",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "203.0.113.0/24",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "224.0.0.0/4",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "224.0.0.0/4",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "240.0.0.0/4",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "240.0.0.0/4",
+                  "masklength-range": "exact"
+                }
+              ]
+            }
+          },
+          {
+            "config": {
+              "name" : "BOGON_IPV6",
+              "mode": "IPV6"
+            },
+            "name": "BOGON_IPV6",
+            "prefixes": {
+              "prefix": [
+                {
+                  "config": {
+                    "ip-prefix": "0100::/64",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "0100::/64",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "2001:2::/48",
+                    "masklength-range": "48..52"
+                  },
+                  "ip-prefix": "2001:2::/48",
+                  "masklength-range": "48..52"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "2001:10::/30",
+                    "masklength-range": "28..32"
+                  },
+                  "ip-prefix": "2001:10::/30",
+                  "masklength-range": "28..32"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "2001:db8::/32",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "2001:db8::/32",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "2002::/16",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "2002::/16",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "3ffe::/16",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "3ffe::/16",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "3fff::/20",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "3fff::/20",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "5f00::/16",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "5f00::/16",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "fc00::/7",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "fc00::/7",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "fe80::/10",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "fe80::/10",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "fec0::/10",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "fec0::/10",
+                  "masklength-range": "exact"
+                },
+                {
+                  "config": {
+                    "ip-prefix": "ff00::/8",
+                    "masklength-range": "exact"
+                  },
+                  "ip-prefix": "ff00::/8",
+                  "masklength-range": "exact"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "policy-definitions": {
+      "policy-definition": [
+        {
+          "config": {
+            "name": "BOGON_IPV4_POLICY"
+          },
+          "name": "BOGON_IPV4_POLICY",
+          "statements": {
+            "statement": [
+              {
+                "config": {
+                  "name": "BOGON_IPV4_POLICY_1"
+                },
+                "name": "BOGON_IPV4_POLICY_1",
+                "conditions": {
+                  "match-prefix-set": {
+                    "config": {
+                      "prefix-set": "BOGON_IPV4"
+                    }
+                  }
+                },
+                "actions": {
+                  "config": {
+                    "policy-result": "REJECT_ROUTE"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "config": {
+            "name": "BOGON_IPV6_POLICY"
+          },
+          "name": "BOGON_IPV6_POLICY",
+          "statements": {
+            "statement": [
+              {
+                "config": {
+                  "name": "BOGON_IPV6_POLICY_1"
+                },
+                "name": "BOGON_IPV6_POLICY_1",
+                "conditions": {
+                  "match-prefix-set": {
+                    "config": {
+                      "prefix-set": "BOGON_IPV6",
+                      "match-set-options": "ANY"
+                    }
+                  }
+                },
+                "actions": {
+                  "config": {
+                    "policy-result": "REJECT_ROUTE"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "acl": {
+    "acl-sets": {
+      "acl-set": [
+        {
+          "config": {
+            "name": "ACL_1",
+            "type": "ACL_IPV4"
+          },
+          "name":"ACL_1",
+          "type":"ACL_IPV4",
+          "acl-entries": {
+            "acl-entry": [
+              {
+                "config": {
+                  "sequence-id": 10
+                },
+                "sequence-id": 10,
+                "ipv4": {
+                  "config": {
+                    "source-address":"0.0.0.0/0",
+                    "destination-address":"0.0.0.0/0"
+                  }
+                },
+                "transport": {
+                  "config": {
+                    "source-port":"0..65535",
+                    "destination-port":"0..65535"
+                  }
+                },
+                "actions": {
+                  "config": {
+                    "forwarding-action":"ACCEPT",
+                    "log-action":"LOG_NONE"
+                  }
+                }
+              },
+              {
+                "config": {
+                  "sequence-id": 20
+                },
+                "sequence-id": 20,
+                "actions": {
+                  "config": {
+                    "forwarding-action":"DROP",
+                    "log-action":"LOG_SYSLOG"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "config": {
+            "name": "ACL_2",
+            "type": "ACL_IPV6"
+          },
+          "name":"ACL_2",
+          "type":"ACL_IPV6",
+          "acl-entries": {
+            "acl-entry": [
+              {
+                "config": {
+                  "sequence-id": 10
+                },
+                "sequence-id": 10,
+                "ipv6": {
+                  "config": {
+                    "source-address":"::/0",
+                    "destination-address":"::/0"
+                  }
+                },
+                "transport": {
+                  "config": {
+                    "source-port":"0..65535",
+                    "destination-port":"0..65535"
+                  }
+                },
+                "actions": {
+                  "config": {
+                    "forwarding-action":"ACCEPT",
+                    "log-action":"LOG_NONE"
+                  }
+                }
+              },
+              {
+                "config": {
+                  "sequence-id": 20
+                },
+                "sequence-id": 20,
+                "actions": {
+                  "config": {
+                    "forwarding-action":"DROP",
+                    "log-action":"LOG_SYSLOG"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "interfaces": {
+      "interface": [
+        {
+          "config": {
+            "id":"g0/0/0"
+          },
+          "id":"g0/0/0",
+          "interface-ref": {
+            "config": {
+              "interface":"g0/0/0"
+            }
+          },
+          "ingress-acl-sets": {
+            "ingress-acl-set": [
+              {
+                "config": {
+                  "set-name": "ACL_1",
+                  "type": "ACL_IPV4"
+                },
+                "set-name": "ACL_1",
+                "type": "ACL_IPV4"
+              }
+            ]
+          }
+        },
+        {
+          "config": {
+            "id":"g0/0/0.100"
+          },
+          "id":"g0/0/0.100",
+          "interface-ref": {
+            "config": {
+              "interface":"g0/0/0",
+              "subinterface": 100
+            }
+          },
+          "ingress-acl-sets": {
+            "ingress-acl-set": [
+              {
+                "config": {
+                  "set-name": "ACL_2",
+                  "type": "ACL_IPV6"
+                },
+                "set-name": "ACL_2",
+                "type": "ACL_IPV6"
+              }
+            ]
+          }
+        },
+        {
+          "config": {
+            "id":"lo0"
+          },
+          "id":"lo0",
+          "interface-ref": {
+            "config": {
+              "interface":"lo0"
+            }
+          },
+          "ingress-acl-sets": {
+            "ingress-acl-set": [
+              {
+                "config": {
+                  "set-name": "ACL_1",
+                  "type": "ACL_IPV4"
+                },
+                "set-name": "ACL_1",
+                "type": "ACL_IPV4"
+              }
+            ]
+          }
+        },
+        {
+          "config": {
+            "id":"lo0.0"
+          },
+          "id":"lo0.0",
+          "interface-ref": {
+            "config": {
+              "interface":"lo0",
+              "subinterface":0
+            }
+          },
+          "ingress-acl-sets": {
+            "ingress-acl-set": [
+              {
+                "config": {
+                  "set-name": "ACL_1",
+                  "type": "ACL_IPV4"
+                },
+                "set-name": "ACL_1",
+                "type": "ACL_IPV4"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "interfaces": {
+    "interface": [
+      {
+        "config": {
+          "name": "g0/0/0",
+          "type": "ethernetCsmacd",
+          "enabled": true
+        },
+        "ethernet": {
+          "switched-vlan": {
+            "config": {
+              "interface-mode": "TRUNK",
+              "trunk-vlans": [
+                1024,
+                1025,
+                "1026..1030"
+              ]
+            }
+          }
+        },
+        "name": "g0/0/0",
+        "subinterfaces": {
+          "subinterface": [
+            {
+              "config": {
+                "index": 100
+              },
+              "index": 100,
+              "ipv6": {
+                "addresses": {
+                  "address": [
+                    {
+                      "config": {
+                        "ip": "2001:DB8::12",
+                        "prefix-length": 127
+                      },
+                      "ip": "2001:DB8::12"
+                    }
+                  ]
+                }
+              },
+              "vlan": {
+                "config": {
+                  "vlan-id": 100
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "config": {
+          "name": "lo0",
+          "type": "softwareLoopback",
+          "enabled": true
+        },
+        "name": "lo0",
+        "subinterfaces": {
+          "subinterface": [
+            {
+              "config": {
+                "index": 0
+              },
+              "index": 0,
+              "ipv4": {
+                "addresses": {
+                  "address": [
+                    {
+                      "config": {
+                        "ip": "5.5.5.5",
+                        "prefix-length": 32
+                      },
+                      "ip": "5.5.5.5"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "network-instances": {
+    "network-instance": [
+      {
+        "config": {
+          "name": "GLOBAL",
+          "type": "DEFAULT_INSTANCE"
+        },
+        "interfaces": {
+          "interface": [
+            {
+              "config": {
+                "id": "g0/0/0",
+                "interface": "g0/0/0"
+              },
+              "id": "g0/0/0"
+            }
+          ]
+        },
+        "name": "GLOBAL",
+        "vlans": {
+          "vlan": [
+            {
+              "config": {
+                "name": "vlan1024",
+                "vlan-id": 1024
+              },
+              "vlan-id": 1024
+            },
+            {
+              "config": {
+                "name": "vlan1025",
+                "vlan-id": 1025
+              },
+              "vlan-id": 1025
+            },
+            {
+              "config": {
+                "name": "vlan1026",
+                "vlan-id": 1026
+              },
+              "vlan-id": 1026
+            },
+            {
+              "config": {
+                "name": "vlan1027",
+                "vlan-id": 1027
+              },
+              "vlan-id": 1027
+            },
+            {
+              "config": {
+                "name": "vlan1028",
+                "vlan-id": 1028
+              },
+              "vlan-id": 1028
+            },
+            {
+              "config": {
+                "name": "vlan1029",
+                "vlan-id": 1029
+              },
+              "vlan-id": 1029
+            }
+          ]
+        },
+        "protocols": {
+          "protocol": [
+            {
+              "config": {
+                "identifier": "BGP",
+                "name": "BGP_INST"
+              },
+              "identifier": "BGP",
+              "name": "BGP_INST",
+              "bgp": {
+                "global": {
+                  "config": {
+                    "as":12,
+                    "router-id": "5.5.5.5"
+                  }
+                },
+                "neighbors": {
+                  "neighbor": [
+                    {
+                      "config": {
+                        "neighbor-address": "1.1.1.1",
+                        "enabled": true
+                      },
+                      "neighbor-address": "1.1.1.1",
+                      "apply-policy": {
+                        "config": {
+                          "import-policy": [
+                            "BOGON_IPV4_POLICY", 
+                            "BOGON_IPV6_POLICY"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "config": {
+                        "neighbor-address": "2.2.2.2",
+                        "enabled": true,
+                        "peer-group": "testpeergroup"
+                      },
+                      "neighbor-address": "2.2.2.2"
+                    }
+                  ]
+                },
+                "peer-groups": {
+                  "peer-group": [
+                    {
+                      "config": {
+                        "peer-group-name": "testpeergroup"
+                      },
+                      "peer-group-name":"testpeergroup",
+                      "apply-policy": {
+                        "config": {
+                          "import-policy": [
+                            "BOGON_IPV4_POLICY", 
+                            "BOGON_IPV6_POLICY"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "config": {
+          "name": "SOME_VPN",
+          "type": "L3VRF"
+        },
+        "interfaces": {
+          "interface": [
+            {
+              "config": {
+                "id": "SALT-LAKE-CITY-OFFICE",
+                "interface": "g0/0/0",
+                "subinterface": "100"
+              },
+              "id": "SALT-LAKE-CITY-OFFICE"
+            }
+          ]
+        },
+        "name": "SOME_VPN"
+      }
+    ]
+  }
+}
